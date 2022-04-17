@@ -51,6 +51,9 @@ jobs:
         WZXY_DISTRICT: ${{secrets.DISTRICT}}
         WZXY_PROVINCE: ${{secrets.PROVINCE}}
         WZXY_TOWNSHIP: ${{secrets.TOWNSHIP}}
+        WZXY_AREACODE: ${{secrets.AREACODE}}
+        WZXY_TOWNCODE: ${{secrets.TOWNCODE}}
+        WZXY_CITYCODE: ${{secrets.CITYCODE}}
         WZXY_STREET: ${{secrets.STREET}}
         WZXY_ANSWERS: ${{secrets.ANSWERS}}
       run: python wzxy-healthcheck.py
