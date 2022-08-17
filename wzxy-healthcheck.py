@@ -96,7 +96,7 @@ class WoZaiXiaoYuanPuncher:
                     input[i] = utils.getRandomTemperature()
             ANSWERS=json.dumps(input,ensure_ascii=False,separators=(',',':'))
         else:
-            ANSWERS='["0","2","2"]'
+            ANSWERS='["0","0","0","0"]'
         sign_time = int(round(time.time() * 1000))  # 13位
         content = f"{os.environ['WZXY_PROVINCE']}_{sign_time}_{os.environ['WZXY_CITY']}"
         signature = hashlib.sha256(content.encode('utf-8')).hexdigest()
